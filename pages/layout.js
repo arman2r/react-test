@@ -27,16 +27,16 @@ function layout(props, { children, title, description }) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
 
-    const router = useRouter();
+    // const router = useRouter();
 
-    useEffect(() => {
-        // redirect to home if already logged in
-        if (userService.userValue) {
-            router.push('/');
-        }
+    // useEffect(() => {
+    //     // redirect to home if already logged in
+    //     if (userService.userValue) {
+    //         router.push('/');
+    //     }
 
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    //     // eslint-disable-next-line react-hooks/exhaustive-deps
+    // }, []);
 
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
